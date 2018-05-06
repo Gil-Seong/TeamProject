@@ -6,6 +6,7 @@ public class DBConnectionVo {
 	private String userName;
 	private String contents;
 	
+	
 	public int getBno() {
 		return bno;
 	}
