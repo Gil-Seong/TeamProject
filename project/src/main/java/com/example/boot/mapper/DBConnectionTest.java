@@ -1,10 +1,10 @@
-package mapper;
+package com.example.boot.mapper;
 
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import vo.DBConnectionVo;
+import com.example.boot.vo.DBConnectionVo;
 
 @Mapper
 public class DBConnectionTest {

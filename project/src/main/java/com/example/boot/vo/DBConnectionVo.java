@@ -1,4 +1,4 @@
-package vo;
+package com.example.boot.vo;
 
 public class DBConnectionVo {
 	
