@@ -35,6 +35,7 @@ public class DBInsertTest {
         vo.setContent("내용입니다.");
         vo.setWriter("작성자입니다.");
         
+        
         mapper.boardInsert(vo);
         
     }
