@@ -6,9 +6,9 @@ import org.apache.ibatis.annotations.Mapper;
 
 import com.example.boot.vo.DBConnectionVo;
 
-@Mapper
-public class DBConnectionTest {
+//@Mapper
+public interface DBConnectionTest {
 
-//	public List list(DBConnectionVo vo) throws Exception;
+	public void boardInsert(DBConnectionVo vo) throws Exception;
 	
 }
