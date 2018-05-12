@@ -36,6 +36,7 @@ public class DBInsertTest {
         vo.setWriter("작성자입니다.");
         
         
+        
         mapper.boardInsert(vo);
         
     }
