@@ -37,7 +37,6 @@ public class DBInsertTest {
         
         
         
-        
         mapper.boardInsert(vo);
         
     }
