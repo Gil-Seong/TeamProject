@@ -7,13 +7,12 @@ import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 @SpringBootApplication
-@SpringBootTest(classes = SpringBoot02Application.class)
+//@SpringBootTest(classes = SpringBoot02Application.class)
 @MapperScan(value = {"com.example.boot.mapper"})
 public class SpringBoot02Application {
 

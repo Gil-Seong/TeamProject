@@ -2,11 +2,12 @@ package com.example.boot;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class Helloworld {
 	
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
@@ -19,7 +20,7 @@ public class Helloworld {
 		logger.warn("logback example - warn level");
 		logger.error("logback example - error level");
 		
-		return "hello page";
+		return "hello";
 	}
 	
 }
