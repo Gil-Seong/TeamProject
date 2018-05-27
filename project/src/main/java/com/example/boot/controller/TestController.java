@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 @Controller
 public class TestController {
 
-		@RequestMapping(value="test", method=RequestMethod.GET)
+		@RequestMapping(value="test.do", method=RequestMethod.GET)
 		public String hello2() {
 			
-			return "views/test";
+			return "index";
 		}
 		
 }

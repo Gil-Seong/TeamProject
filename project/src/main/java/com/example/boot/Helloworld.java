@@ -12,7 +12,7 @@ public class Helloworld {
 	
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
-	@RequestMapping(value = "/help" ,method = RequestMethod.GET )
+	@RequestMapping(value = "/help.do" ,method = RequestMethod.GET )
 	public String help() {
 		
 		logger.debug("logback example - debug level");
@@ -20,7 +20,7 @@ public class Helloworld {
 		logger.warn("logback example - warn level");
 		logger.error("logback example - error level");
 		
-		return "hello";
+		return "/views/hello";
 	}
 	
 }
