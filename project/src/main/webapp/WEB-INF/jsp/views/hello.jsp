@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<c:set var="contextPath" value="<%= request.getContextPath()%>"></c:set>  
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -10,9 +11,19 @@
 <body>
 
 hello world 
-${ContextPath}
-${servlet.context-path}
-${context-path}
+<br>
+${pageContext.request.scheme}
+<br>
+${pageContext.request.serverName}
+<br>
+${pageContext.request.serverPort}
+<br>
+${pageContext.request.contextPath}
+<br>
+${pageContext.request.requestURL}
+<br>
+${pageContext.request.requestURI}
+
 
 </body>
 </html>
