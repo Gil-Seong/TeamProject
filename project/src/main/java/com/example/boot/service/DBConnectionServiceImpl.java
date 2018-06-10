@@ -1,5 +1,7 @@
 package com.example.boot.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,5 +20,8 @@ public class DBConnectionServiceImpl {
 		
 	}
 	
+	public List<DBConnectionVo> getBoard() throws Exception{
+		return dbMapper.boardSelect();
+	}
 
 }

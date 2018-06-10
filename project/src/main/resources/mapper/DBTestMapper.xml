@@ -7,4 +7,8 @@
             values
         (#{bno},#{subject},#{content},#{writer},now(),0)
     </insert>
+    
+    <select id="boardSelect" resultType="com.example.boot.vo.DBConnectionVo">
+    	select * from board_pro
+    </select>
 </mapper>

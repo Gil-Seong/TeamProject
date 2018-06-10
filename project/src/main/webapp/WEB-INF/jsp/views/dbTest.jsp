@@ -13,6 +13,21 @@
 
 <input type="text" id="insert_text">
 <button id="dbinsert">insert</button>
+<br>
+${modelTest}
+<br>
+<table border="1">
+	<c:forEach var="list" items="${boardList}">
+		<tr>
+			<td>${list.bno}</td>
+			<td>${list.subject}</td>
+			<td>${list.content}</td>
+			<td>${list.writer}</td>
+			<td>${list.reg_date}</td>
+			<td>${list.hit}</td>
+		</tr>
+	</c:forEach>
+</table>
 
 </body>
 

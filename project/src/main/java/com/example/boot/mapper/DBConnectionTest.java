@@ -10,5 +10,6 @@ import com.example.boot.vo.DBConnectionVo;
 public interface DBConnectionTest {
 
 	public void boardInsert(DBConnectionVo vo) throws Exception;
+	public List<DBConnectionVo> boardSelect() throws Exception;
 	
 }
